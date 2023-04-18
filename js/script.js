@@ -30,7 +30,7 @@ arrayElements.map((el,key)=>{
 
     console.log(el.textContent.indexOf("1"))
 
-   if(el.textContent.,indexOf("1") != (-1)) {
+   if(el.textContent.indexOf("1") != (-1)) {
       el.textContent = `[ ${el.textContent} ]`;
    }
 
