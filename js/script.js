@@ -36,3 +36,13 @@ arrayElements.map((el,key)=>{
 
 });
 
+function mudaCor(){
+    let r = Math.ceil(Math.random()*255);
+    let g = Math.ceil(Math.random()*255);
+    let b = Math.ceil(Math.random()*255);
+    console.log(r)
+    
+    const elemento = document.getElementsByClassName("conteudo")
+}
+
+mudaCor;
