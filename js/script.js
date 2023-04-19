@@ -36,13 +36,27 @@ arrayElements.map((el,key)=>{
 
 });
 
-function mudaCor(){
+let tmp = 0;
+
+function mudaCor() {
     let r = Math.ceil(Math.random()*255);
     let g = Math.ceil(Math.random()*255);
     let b = Math.ceil(Math.random()*255);
     console.log(r)
     
-    const elemento = document.getElementsByClassName("conteudo")
+    const elemento = [...document.getElementsByClassName("conteudo")];
+
+    elemento.forEach((el)=>{
+        el.getElementsByClassName.backgroundColor = `rgb(${r},${g},${b})`
+    })
+
+    tmp = setTimeout(mudaCor, 5000)
+
 }
 
-mudaCor;
+function pararTimeOut(){
+    clearTimeout(tmp)
+}
+
+
+mudaCor();
