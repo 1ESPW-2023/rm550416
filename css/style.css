@@ -16,15 +16,15 @@
     height: 60vh;
 }
 .conteudo{
-    flex-grow: 1;
+    flex-grow: 5;
     background-color: blueviolet;
 }
 
-.1-e{
+.l-e{
     flex-grow: 1;
     background-color: blue;
 }
-.1-d{
+.l-d{
     flex-grow: 1;
     background-color: blue;
 }

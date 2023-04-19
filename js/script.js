@@ -55,7 +55,7 @@ function mudaCor() {
 }
 
 function pararTimeOut(){
-    clearTimeout(tmp)
+    clearTimeout(tmp);
 }
 
 
