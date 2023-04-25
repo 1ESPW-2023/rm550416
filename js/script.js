@@ -24,39 +24,38 @@
 
 // console.log(arrayElements);
 
-const arrayElements = [...document.querySelectorAll("li")];
+// const arrayElements = [...document.querySelectorAll("li")];
 
-arrayElements.map((el,key)=>{
+// arrayElements.map((el,key)=>{
 
-    console.log(el.textContent.indexOf("1"))
+//     console.log(el.textContent.indexOf("1"))
 
-   if(el.textContent.indexOf("1") != (-1)) {
-      el.textContent = `[ ${el.textContent} ]`;
-   }
+//    if(el.textContent.indexOf("1") != (-1)) {
+//       el.textContent = `[ ${el.textContent} ]`;
+//    }
 
-});
+// });
 
 let tmp = 0;
+
 
 function mudaCor() {
     let r = Math.ceil(Math.random()*255);
     let g = Math.ceil(Math.random()*255);
     let b = Math.ceil(Math.random()*255);
-    console.log(r)
     
     const elemento = [...document.getElementsByClassName("conteudo")];
+    elemento.forEach( (el)=>{
+        el.style.backgroundColor = `rgb(${r},${g},${b})`;
+    } )
 
-    elemento.forEach((el)=>{
-        el.getElementsByClassName.backgroundColor = `rgb(${r},${g},${b})`
-    })
-
-    tmp = setTimeout(mudaCor, 5000)
+   tmp = setTimeout(mudaCor, 5000);
 
 }
 
-function pararTimeOut(){
+function pararTimeOut() {
     clearTimeout(tmp);
 }
 
+mudaCor()
 
-mudaCor();

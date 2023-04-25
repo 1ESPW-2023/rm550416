@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIME-OUT</title>
     <script src="./js/script.js" defer></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
     <header class="cabecalho">
         <span>CABEÇALHO</span>
     </header>
+
     <div class="container">
         <aside class="l-e">
             <span>BANNER-E</span>
-        </aside >
+        </aside>
         <section class="conteudo">
-            <span>CONTEÚDO</span>
+            <span>CONTEUDO</span>
         </section>
         <aside class="l-d">
             <span>BANNER-D</span>
@@ -26,11 +28,13 @@
 
     <footer class="rodape">
         <span>RODAPÉ</span>
+
+        <div>
+            <button onclick="mudaCor()">start</button>
+            <button onclick="clearTimeout(tmp)">stop</button>
+        </div>
+        
     </footer>
-    <div>
-        <button onclick="pararTimeOut()">
-            stop
-        </button>
-    </div>
+
 </body>
 </html>
