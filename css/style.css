@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: auto;
+    height: 120vh;
 }
 
 .conteudo{
@@ -21,9 +21,11 @@
 }
 .l-e{
     flex-grow: 1;
-    background-color:coral;
+    background-color: blueviolet;
+    background-image: url(../img/banner-lateral-1.png);
 }
 .l-d{
     flex-grow: 1;
-    background-color: crimson;
+    background-color: blueviolet;
+    background-image: url(../img/banner-lateral-1.png);
 }

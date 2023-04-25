@@ -52,6 +52,60 @@ function mudaCor() {
    tmp = setTimeout(mudaCor, 5000);
 
 }
+function mudaImg1(){
+    // let num = Math.ceil(Math.random()*3);
+
+    const elementoImge = [...document.getElementsByClassName("l-e")];
+    const elementoImgd = [...document.getElementsByClassName("l-d")];
+    elementoImge.forEach( (el)=>{
+        el.style.backgroundImage = `url(./img/banner-lateral-1.png)`;
+    } )
+elementoImgd.forEach( (el)=>{
+        el.style.backgroundImage = `url(./img/banner-lateral-1.png)`;
+    } )
+
+    setTimeout(mudaImg2, 1000);
+
+    // elementoImge.forEach( (el)=>{
+    //     el.style.backgroundImage = `url(./img/banner-lateral-${num}.png)`;
+    // } )
+}
+
+function mudaImg2(){
+    // let num = Math.ceil(Math.random()*3);
+
+    const elementoImge = [...document.getElementsByClassName("l-e")];
+    const elementoImgd = [...document.getElementsByClassName("l-d")];
+    elementoImge.forEach( (el)=>{
+            el.style.backgroundImage = `url(./img/banner-lateral-2.png)`;
+        } )
+    elementoImgd.forEach( (el)=>{
+            el.style.backgroundImage = `url(./img/banner-lateral-2.png)`;
+        } )
+
+    setTimeout(mudaImg3, 1000);
+    // elementoImge.forEach( (el)=>{
+    //     el.style.backgroundImage = `url(./img/banner-lateral-${num}.png)`;
+    // } )
+}
+
+function mudaImg3(){
+    // let num = Math.ceil(Math.random()*3);
+
+    const elementoImge = [...document.getElementsByClassName("l-e")];
+    const elementoImgd = [...document.getElementsByClassName("l-d")];
+    elementoImge.forEach( (el)=>{
+        el.style.backgroundImage = `url(./img/banner-lateral-3.png)`;
+    } )
+elementoImgd.forEach( (el)=>{
+        el.style.backgroundImage = `url(./img/banner-lateral-3.png)`;
+    } )
+
+    setTimeout(mudaImg1, 1000);
+    // elementoImge.forEach( (el)=>{
+    //     el.style.backgroundImage = `url(./img/banner-lateral-${num}.png)`;
+    // } )
+}
 
 function pararTimeOut() {
     clearTimeout(tmp);
