@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIME-OUT</title>
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <span>CABEÇALHO</span>
+    </header>
+
+    <div class="container">
+        <aside class="l-e">
+        </aside>
+        <section class="conteudo">
+            <img src="./img/pic_bulboff.gif" alt="lampada">
+            <button onClick="turnInOff()">LIGAR</button>
+        </section>
+        <aside class="l-d">
+        </aside>
+    </div>
+
+    <footer class="rodape">
+        <span>RODAPÉ</span>
+
+        <div>
+            <button onclick="mudaCor()">start</button>
+            <button onclick="mudaImg1()">startIMG</button>
+            <button onclick="clearTimeout(tmp)">stop</button>
+        </div>
+        
+    </footer>
+
+</body>
+</html>
